@@ -1,94 +1,96 @@
-# 10x Astro Starter
+# VibeTravels
 
-A modern, opinionated starter template for building fast, accessible, and AI-friendly web applications.
+## Table of Contents
+- Project Description
+- Tech Stack
+- Getting Started Locally
+- Available Scripts
+- License
+
+## Project Description
+
+VibeTravels is a web application that uses artificial intelligence to transform simple travel notes into comprehensive travel plans. It's designed for groups of friends (up to 8 adults) who want to efficiently plan engaging trips based on their preferences, budget, and available time.
+
+The application solves common trip planning challenges by:
+- Automatically finding attractions that match group preferences
+- Arranging attractions in a logical sequence
+- Providing practical information about ticket prices, opening hours, and potential discounts
+- Estimating total trip costs broken down by elements
+- Ensuring quality and appeal of selected locations
+
+VibeTravels streamlines the planning process through AI automation while considering individual preferences, budget constraints, time availability, and other factors affecting trip quality.
 
 ## Tech Stack
 
-- [Astro](https://astro.build/) v5.5.5 - Modern web framework for building fast, content-focused websites
-- [React](https://react.dev/) v19.0.0 - UI library for building interactive components
-- [TypeScript](https://www.typescriptlang.org/) v5 - Type-safe JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) v4.0.17 - Utility-first CSS framework
+### Frontend
+- **Astro 5**: For creating fast, efficient pages with minimal JavaScript
+- **React 19**: For interactive components
+- **TypeScript 5**: For static typing and improved IDE support
+- **Tailwind 4**: For utility-first CSS styling
+- **Shadcn/ui**: For accessible React components
 
-## Prerequisites
+### Backend
+- **Supabase**: Comprehensive backend solution providing:
+  - PostgreSQL database
+  - SDK for Backend-as-a-Service capabilities
+  - Built-in user authentication
+  - Open-source solution that can be hosted locally or on a server
 
-- Node.js v22.14.0 (as specified in `.nvmrc`)
-- npm (comes with Node.js)
+### AI Integration
+- **OpenAI**: For communication with AI models
 
-## Getting Started
+### CI/CD & Hosting
+- **GitHub Actions**: For CI/CD pipelines
+- **DigitalOcean**: For hosting the application via Docker image
+
+## Getting Started Locally
+
+### Prerequisites
+- Node.js 22.14.0 (use NVM to install the correct version)
+- Git
+
+### Installation
 
 1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/vibetravels.git
+   cd vibetravels
+   ```
 
-```bash
-git clone https://github.com/przeprogramowani/10x-astro-starter.git
-cd 10x-astro-starter
-```
+2. Install the correct Node.js version using NVM:
+   ```bash
+   nvm use
+   ```
 
-2. Install dependencies:
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm install
-```
+4. Set up environment variables:
+   Create a `.env` file in the root directory with the necessary environment variables (refer to project documentation for required variables).
 
-3. Run the development server:
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm run dev
-```
-
-4. Build for production:
-
-```bash
-npm run build
-```
+6. Open your browser and navigate to `http://localhost:4321`
 
 ## Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Fix ESLint issues
-
-## Project Structure
-
-```md
-.
-├── src/
-│   ├── layouts/    # Astro layouts
-│   ├── pages/      # Astro pages
-│   │   └── api/    # API endpoints
-│   ├── components/ # UI components (Astro & React)
-│   └── assets/     # Static assets
-├── public/         # Public assets
-```
-
-## AI Development Support
-
-This project is configured with AI development tools to enhance the development experience, providing guidelines for:
-
-- Project structure
-- Coding practices
-- Frontend development
-- Styling with Tailwind
-- Accessibility best practices
-- Astro and React guidelines
-
-### Cursor IDE
-
-The project includes AI rules in `.cursor/rules/` directory that help Cursor IDE understand the project structure and provide better code suggestions.
-
-### GitHub Copilot
-
-AI instructions for GitHub Copilot are available in `.github/copilot-instructions.md`
-
-### Windsurf
-
-The `.windsurfrules` file contains AI configuration for Windsurf.
-
-## Contributing
-
-Please follow the AI guidelines and coding practices defined in the AI configuration files when contributing to this project.
+- `npm run dev` - Starts the Astro development server
+- `npm run build` - Builds the Astro project for production
+- `npm run preview` - Previews the production build locally
+- `npm run astro` - Runs Astro CLI commands
+- `npm run lint` - Runs ESLint to check for code issues
+- `npm run lint:fix` - Runs ESLint and automatically fixes issues where possible
+- `npm run format` - Runs Prettier to format code
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+© 2025 VibeTravels. All rights reserved.
